@@ -3,7 +3,6 @@
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-    "ghcr.io/devcontainers/features/common-utils:2": {},
     "ghcr.io/devcontainers/features/node:1": {},
     "ghcr.io/devcontainers/features/powershell:1": {
       "modules": "powershell-yaml"
@@ -27,5 +26,5 @@
       "editor.defaultFormatter": "ms-python.black-formatter"
     }
   },
-  "postCreateCommand": "cd /workspaces/azure-privacy-sandbox-kms && scripts/set_python_env.sh && npm i && make build && pip install -r requirements.txt && pre-commit install || true"
+  "postCreateCommand": "cd /workspaces/azure-transparent-kms && scripts/set_python_env.sh && npm i && make build && pip install -r requirements.txt && pre-commit install || true"
 }
